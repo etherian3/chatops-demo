@@ -29,3 +29,6 @@ jobs:
 
       - name: Run app test
         run: node app/app.js & sleep 5
+
+      - name: Notify Slack
+        run: echo "Deployment finished for ${{ github.event.inputs.env }}"
