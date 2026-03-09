@@ -12,6 +12,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print deploy info
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show deploy info
         run: |
           echo "Deploying to ${{ github.event.inputs.env }}"
+
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run app test
+        run: node app/app.js & sleep 5
