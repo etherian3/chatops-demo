@@ -1,0 +1,17 @@
+name: Deploy App
+
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        description: "Environment"
+        required: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print deploy info
+        run: |
+          echo "Deploying to ${{ github.event.inputs.env }}"
