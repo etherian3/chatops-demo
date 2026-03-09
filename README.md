@@ -58,7 +58,7 @@ npm install
 Buat sebuah file `.env` di direktori utama (root) proyek berdasarkan file yang sudah ada:
 
 ```env
-GITHUB_TOKEN=ghp_TokenGitHubAndaDiSini
+GITHUB_TOKEN=ghp_TokenGitHub
 REPO=username/nama-repositori
 ```
 
