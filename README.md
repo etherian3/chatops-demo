@@ -26,7 +26,7 @@ chatops/
 │   └── app.js           # Kode aplikasi utama yang akan dites/dideploy
 ├── bot/
 │   └── server.js        # Kode utama server/bot pengelola Slack command
-├── .env                 # File environment variables (jangan di-commit!)
+├── .env                 # File environment variables 
 ├── .gitignore
 ├── package.json
 └── README.md
